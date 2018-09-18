@@ -72,7 +72,7 @@ VScode, Virtualbox, Git
  
 Designed and implemeting the distributed server architecture for simple synchronous game
 
-Used Slack, Evernote, Git, Github, Travis-CI(practice), Unity2D, C++, Boost, Docker
+Used Slack, Evernote, Git, Github, Travis-CI(practice), Unity2D, C++, Boost, Docker, Docker-Compose
 
 ##### Junior Mentor, Particle Artist, Game Server Architect
 ### Negev, Mar 2018 ~ Jul 2018
@@ -133,6 +133,9 @@ Our school  -->
 
 ### 해커톤, 게임잼 참가
 * AppJam, Highthon, GameJam
+
+### OpenSource
+
 
 ### 여러 CTF 참가
 * H3X0R CTF 참가 : 11위
