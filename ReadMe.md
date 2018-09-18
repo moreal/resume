@@ -72,7 +72,7 @@ VScode, Virtualbox, Git
  
 Designed and implemeting the distributed server architecture for simple synchronous game
 
-Used Slack, Evernote, Git, Github, Travis-CI(practice), Unity2D, C++, Boost
+Used Slack, Evernote, Git, Github, Travis-CI(practice), Unity2D, C++, Boost, Docker
 
 ##### Junior Mentor, Particle Artist, Game Server Architect
 ### Negev, Mar 2018 ~ Jul 2018
