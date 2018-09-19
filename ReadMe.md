@@ -72,11 +72,11 @@ VScode, Virtualbox, Git
  
 Designed and implemeting the distributed server architecture for simple synchronous game
 
-Used Slack, Evernote, Git, Github, Travis-CI(practice), Unity2D, C++, Boost, Docker, Docker-Compose
+Using Slack, Evernote, Git, Github, Travis-CI(practice), Unity2D, C++, Boost, Docker, Docker-Compose, Couchbase, MySQL
 
 ##### Junior Mentor, Particle Artist, Game Server Architect
 ### Negev, Mar 2018 ~ Jul 2018
-*Developed Negev, 3D Story Danmak Game Also mentored my junior*
+*Developed Negev, 3D Story Danmak Game. Mentoring my junior*
 
 동아리 후배의 공부, 하고 싶은 것을 만들 수 있게 도와주고자 하는 방향으로 시작한 프로젝트입니다   
 Red-Ticket 프로젝트에서 느꼈던 문제점을 바탕으로 프로젝트 관리를 본격적으로 시도해보고자 하였습니다.  
@@ -98,7 +98,7 @@ Voxel을 이용하여 아이템 리소스를 만들었으며 Unreal Engine의 Bl
 
 Used Unreal-Engine, Voxel, Git, Github, Trello, Slack
 
-<!-- Volunteer -->
+<!-- Volunteering -->
 ##### Educational Volunteer
 ### Sullivan Project, 2017
 *나만의 SNS 만들기*
@@ -110,7 +110,7 @@ Used ROR, Ruby, HTML, CSS
 <!-- Web, Cloud -->
 ##### Back-end Developer
 ### AutoDMS, May 2018 ~ Jun 2018
-*Domitory Manage System's Automatic extension system*
+*Automatic extension system*
 
 <!-- [https://github.com/moreal/autodms](https://github.com/moreal/autodms)   -->
 연장하고 싶은 자습실의 자리를 선택하고 자동으로 연장 신청을 해주도록 하는 간단한 웹 서비스입니다.  
@@ -132,9 +132,14 @@ Our school  -->
 ## Activities
 
 ### 해커톤, 게임잼 참가
-* AppJam, Highthon, GameJam
+* AppJam 13th, 15th
+* Highthon 3th
+* 대전G존
+* 대한민국 제 1회 청소년 게임잼
 
-### OpenSource
+### OpenSource 활동
+[Pycharm-kr](https://github.com/traff/pycharm-kr) Translating  
+[ElasticSearch](https://github.com/wikibook/elasticsearch/pull/4/) Wikibook ReadMe.md 오타 수정  
 
 
 ### 여러 CTF 참가
