@@ -105,7 +105,7 @@ Used Unreal-Engine, Voxel, Git, Github, Trello, Slack
 
 코딩을 배우고 싶어하는 사람들에게 만들고 싶은 것을 만들 수 있게 하는 것을 도와주기 위해 설리번 프로젝트에 참여하여 커리큘럼을 만들고 간단한 SNS를 만들었습니다.
 
-Used ROR, Ruby, HTML, CSS
+Used RoR, Ruby, HTML, CSS
 
 <!-- Web, Cloud -->
 ##### Back-end Developer
@@ -131,16 +131,16 @@ Our school  -->
 
 ## Activities
 
+### OpenSource 활동
+[Pycharm-kr](https://github.com/traff/pycharm-kr) 번역 참여  
+[ElasticSearch](https://github.com/wikibook/elasticsearch/pull/4/) Wikibook ReadMe.md 오타 수정  
+[OpenStack i18n](https://translate.openstack.org/language/view/ko-KR?dswid=2123) Korean 번역팀 활동
+
 ### 해커톤, 게임잼 참가
 * AppJam 13th, 15th
 * Highthon 3th
 * 대전G존
 * 대한민국 제 1회 청소년 게임잼
-
-### OpenSource 활동
-[Pycharm-kr](https://github.com/traff/pycharm-kr) Translating  
-[ElasticSearch](https://github.com/wikibook/elasticsearch/pull/4/) Wikibook ReadMe.md 오타 수정  
-
 
 ### 여러 CTF 참가
 * H3X0R CTF 참가 : 11위
