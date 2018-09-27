@@ -26,31 +26,13 @@ h3, h4, h5 {
 }
 </style>
 
-# **Dogeon Lee**
-<img src="https://scontent-icn1-1.xx.fbcdn.net/v/t1.0-1/p160x160/39102634_797894180601403_1992883126199648256_n.jpg?_nc_cat=0&oh=3016d4ce340e762ffdc59dcb9d7c12ad&oe=5C2819B4" style="float: right; width: 150px; margin-right: 10px">
+# **이도건 (Dogeon Lee)**
+<img src="images/my_face.jpg" style="float: right; width: 150px; margin-right: 10px">
 
-### Email
-[dev.moreal@gmail.com](mailto://dev.moreal@gmail.com)
+## Education
+- 대덕소프트웨어마이스터고등학교, 정보보안과 2학년 재학 중
 
-### Web sites
-[Github Profile](https://github.com/moreal)  
-[LinkedIn Profile](https://linkedin.com/in/devmoreal)
-
-### Education
-- Daedeok Software Highschool, Mar 2017 ~ 
-
-### Language
-- Korean (Native)
-- English (Document reading, translating with dict)
-- Japanese (practice)
 <!-- ------- -->
-
-## Interests
-
-\- Distributed server architecture and NoSQL for high availability  
-\- Multi-threading(processing) programming  
-\- How to make clean(good) code  
-\- Open source and community activity
 
 ## Skills
 
@@ -69,6 +51,24 @@ Travis-CI (practice)
 ##### Tools
 VScode, Virtualbox, Git
 
+## Interests
+
+\- Distributed server architecture and NoSQL for high availability  
+\- Multi-threading(processing) programming  
+\- How to make clean(good) code  
+\- Open source and community activity
+
+### Language
+- Korean (Native)
+- English (Document reading, translating with dict)
+- Japanese (practice)
+
+### Email
+[dev.moreal@gmail.com](mailto://dev.moreal@gmail.com)
+
+### Web sites
+[Github Profile](https://github.com/moreal)  
+
 <!-- New Page, 2nd -->
 
 <br><br><br><br><br><br><br><br>
@@ -76,9 +76,9 @@ VScode, Virtualbox, Git
 ## Activities
 
 ### OpenSource 활동
-[Pycharm-kr](https://github.com/traff/pycharm-kr) 번역 참여  
-[ElasticSearch](https://github.com/wikibook/elasticsearch/pull/4/) Wikibook ReadMe.md 오타 수정  
-[OpenStack i18n](https://translate.openstack.org/language/view/ko-KR?dswid=2123) Korean 번역팀 활동
+- [Pycharm-kr](https://github.com/traff/pycharm-kr) 번역 참여  
+- [ElasticSearch](https://github.com/wikibook/elasticsearch/pull/4/) Wikibook ReadMe.md 오타 수정  
+- [OpenStack i18n](https://translate.openstack.org/language/view/ko-KR?dswid=2123) Korean 번역팀 활동
 
 ### 해커톤, 게임잼 참가
 * AppJam 13th, 15th
@@ -98,25 +98,25 @@ VScode, Virtualbox, Git
 
 ## Awards
 
-##### Server Programmer
+#### Server Programmer
 ### 대한민국 청소년 게임잼 1st, 2018
 *Simple Board Game*
 
 Used Flask, UNet, Unity3D
 
-##### Server Programmer for Safety-Playground
+#### Server Programmer for Safety-Playground
 ### Highthon 3 게임부문 최우수상, Jun 3, 2018
 *Implemented Simple Game Server using PHP*  
 
 Used PHP, MySQL, C#, Unity3D
 
-##### UI Programmer
+#### UI Programmer
 ### AppJam 13th 게임부문 은상, Aug 13, 2017
 *Implemented Simple UI Logic using Unity3D*
 
 Used Unity3D
 
-##### Algorithm
+#### Algorithm
 ### NYPC 2017 특별상
 *Tried to solve program*
 
@@ -125,7 +125,7 @@ Used C, Python
 ## Experience
 
 <!-- Game -->
-##### Game Server Architect, Developer
+#### Game Server Architect, Developer
 ### Ex-Chick-It, Aug 2018 ~
 *Devleloping Ex-Chick-It, Simple mobile 2D multiplay escaping game*
  
@@ -133,7 +133,7 @@ Designed and implemeting the distributed server architecture for simple synchron
 
 Using Slack, Evernote, Git, Github, Travis-CI(practice), Unity2D, C++, Boost, Docker, Docker-Compose, Couchbase, MySQL
 
-##### Junior Mentor, Particle Artist, Game Server Architect
+#### Junior Mentor, Particle Artist, Game Server Architect
 ### Negev, Mar 2018 ~ Jul 2018
 *Developed Negev, 3D Story Danmak Game. Mentoring my junior*
 
@@ -148,7 +148,7 @@ Asana를 사용하여 Task를 관리하고 서로의 진행도를 살펴볼 수 
 
 Used Unity3D, Slack, Github Bot, Github, Asana, Redmine(just try), GCP(compute engine)
 
-##### Recourse Modeler, Developer
+#### Recourse Modeler, Developer
 ### Red-Ticket, Sep 2017 ~ Jan 2018
 *Implemented skills of items and make item resource. participated in planning the game*  
   
@@ -158,7 +158,7 @@ Voxel을 이용하여 아이템 리소스를 만들었으며 Unreal Engine의 Bl
 Used Unreal-Engine, Voxel, Git, Github, Trello, Slack
 
 <!-- Volunteering -->
-##### Educational Volunteer
+#### Educational Volunteer
 ### Sullivan Project, 2017
 *나만의 SNS 만들기*
 
@@ -169,7 +169,7 @@ Used RoR, Ruby, HTML, CSS
 <br><br><br><br><br><br>
 
 <!-- Web, Cloud -->
-##### Back-end Developer
+#### Back-end Developer
 ### AutoDMS, May 2018 ~ Jun 2018
 *Automatic extension system*
 
