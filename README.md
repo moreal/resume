@@ -1,22 +1,30 @@
-# Moreal
+# React + TypeScript + Vite
 
-## Contact
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Email: [dev.moreal@gmail.com](mailto://dev.moreal@gmail.com)  
-GitHub: [moreal](https://github.com/moreal)  
-Twitter: [@dev_moreal](https://twitter.com/dev_moreal)
+Currently, two official plugins are available:
 
-## Work Experiences
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-### Blockchain Engineer at Planetarium, 2019 ~ Now
+## Expanding the ESLint configuration
 
-- Build an open source blockchain game engine, Libplanet.  
-- Maintain an open source blockchain MMO game, [Nine Chronicles](https://nine-chronicles.com/) and the projects (e.g. [planetarium/lib9c], [planetarium/NineChronicles.Headless]).
-- Build an bridge application to help conversion between Ethereum ERC20 token WNCG and Nine Chronicles network NCG.
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-[planetarium/lib9c]: https://github.com/planetarium/lib9c
-[planetarium/NineChronicles.Headless]: https://github.com/planetarium/NineChronicles.Headless
+- Configure the top-level `parserOptions` property like this:
 
-### Presentation
+```js
+export default {
+  // other rules...
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+    tsconfigRootDir: __dirname,
+  },
+}
+```
 
-- PyCon Korea 2020, 직렬화 포맷 개량과 라이브러리 구현. [SlideShare](https://www.slideshare.net/ssuser816abd/pycon-korea-2020-238651563)
+- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
+- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
