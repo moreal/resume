@@ -53,17 +53,11 @@ function EmailIcon() {
 }
 
 function ResumeIcon() {
-	return (
-		<svg
-			className="size-4 mt-1"
-			xmlns="http://www.w3.org/2000/svg"
-			viewBox="0 0 16 16"
-			width="16"
-			height="16"
-		>
-			<path d="M1.75 2h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 14H1.75A1.75 1.75 0 0 1 0 12.25v-8.5C0 2.784.784 2 1.75 2ZM1.5 12.251c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V5.809L8.38 9.397a.75.75 0 0 1-.76 0L1.5 5.809v6.442Zm13-8.181v-.32a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25v.32L8 7.88Z"></path>
-		</svg>
-	);
+	return <svg className="size-4 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M0 3.75C0 2.784.784 2 1.75 2h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 14H1.75A1.75 1.75 0 0 1 0 12.25Zm1.75-.25a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25v-8.5a.25.25 0 0 0-.25-.25ZM3.5 6.25a.75.75 0 0 1 .75-.75h7a.75.75 0 0 1 0 1.5h-7a.75.75 0 0 1-.75-.75Zm.75 2.25h4a.75.75 0 0 1 0 1.5h-4a.75.75 0 0 1 0-1.5Z"></path></svg>
+}
+
+function BlogIcon() {
+	return <svg className="size-4 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M0 1.75A.75.75 0 0 1 .75 1h4.253c1.227 0 2.317.59 3 1.501A3.743 3.743 0 0 1 11.006 1h4.245a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-4.507a2.25 2.25 0 0 0-1.591.659l-.622.621a.75.75 0 0 1-1.06 0l-.622-.621A2.25 2.25 0 0 0 5.258 13H.75a.75.75 0 0 1-.75-.75Zm7.251 10.324.004-5.073-.002-2.253A2.25 2.25 0 0 0 5.003 2.5H1.5v9h3.757a3.75 3.75 0 0 1 1.994.574ZM8.755 4.75l-.004 7.322a3.752 3.752 0 0 1 1.992-.572H14.5v-9h-3.495a2.25 2.25 0 0 0-2.25 2.25Z"></path></svg>
 }
 
 function LinkIcon() {
@@ -115,8 +109,8 @@ function Project({
 	period,
 }: ProjectProps) {
 	return (
-		<div className="flex flex-col mt-4 gap-2">
-			<h3 className="text-xl font-bold">{title}</h3>
+		<div className="flex flex-col mt-8 gap-2">
+			<h3 className="text-lg font-bold">{title}</h3>
 			<p>{period}</p>
 			<ul className="flex flex-col gap-1">
 				{repositories.map((repo) => (
@@ -153,8 +147,8 @@ interface PresentationProps {
 
 function Presentation({ title, videoLink, description }: PresentationProps) {
 	return (
-		<div className="flex flex-col gap-2">
-			<h2 className="text-2xl font-bold">{title}</h2>
+		<div className="flex flex-col gap-2 mb-8">
+			<h2 className="text-lg font-bold">{title}</h2>
 			<p className="flex text-sm gap-2 align-middle">
 				<VideoIcon />
 				<Link link={videoLink} />
@@ -172,8 +166,8 @@ interface ActivityProps {
 
 function Activity({ title, link, descriptions }: ActivityProps) {
 	return (
-		<div className="flex flex-col gap-2">
-			<h2 className="text-2xl font-bold">{title}</h2>
+		<div className="flex flex-col gap-2 mb-8">
+			<h2 className="text-lg font-bold">{title}</h2>
 			<p className="flex text-sm gap-2 align-middle">
 				<GitHubIcon />
 				<Link link={link} />
@@ -196,7 +190,7 @@ interface JobProps {
 function Job({ company, keywords, projects }: JobProps) {
 	return (
 		<div className="flex flex-col gap-2">
-			<h2 className="text-2xl font-bold">{company}</h2>
+			<h2 className="text-xl font-bold">{company}</h2>
 			<p>2019.08. ~ 재직 중</p>
 			<p className="text-sm">
 				블록체인 기술을 이용한 게임을 제작하는 기업입니다.
@@ -221,7 +215,7 @@ function Job({ company, keywords, projects }: JobProps) {
 			{projects.map((proj) => (
 				proj.title === "Cocona.Docs"
 					? <>
-						<span className="print:mt-[100px]"/>
+						<span className="print:mt-[50px]"/>
 						<Project {...proj} />
 					  </>
 					: <Project {...proj} />
@@ -230,7 +224,7 @@ function Job({ company, keywords, projects }: JobProps) {
 	);
 }
 
-function getIcon(iconName: "Email" | "GitHub" | "Phone" | "Resume") {
+function getIcon(iconName: "Email" | "GitHub" | "Phone" | "Resume" | "Blog") {
 	if (iconName === "GitHub") {
 		return <GitHubIcon />;
 	}
@@ -246,6 +240,10 @@ function getIcon(iconName: "Email" | "GitHub" | "Phone" | "Resume") {
 	if (iconName === "Resume") {
 		return <ResumeIcon />;
 	}
+
+	if (iconName === "Blog") {
+		return <BlogIcon />;
+	}
 }
 
 function PersonalInfo({
@@ -253,7 +251,7 @@ function PersonalInfo({
 	value,
 	isLink,
 }: {
-	title: "Email" | "GitHub" | "Phone" | "Resume";
+	title: "Email" | "GitHub" | "Phone" | "Resume" | "Blog";
 	value: string;
 	isLink?: boolean;
 }) {
@@ -292,6 +290,11 @@ function App() {
 							value="https://resume.moreal.dev/"
 							isLink
 						/>
+						<PersonalInfo
+							title="Blog"
+							value="https://velog.io/@moreal/"
+							isLink
+						/>
 					</ul>
 					<p className="mt-4">
 						안녕하세요, 5년차 소프트웨어 개발자{" "}
@@ -309,7 +312,7 @@ function App() {
 				</div>
 
 				<div id="work" className="flex flex-col gap-4 print:mt-[450px]">
-					<h1 className="text-4xl font-bold mt-16 mb-4">업무 경험</h1>
+					<h1 className="text-2xl font-bold mt-16 mb-4">업무 경험</h1>
 					<Job
 						company="Planetarium"
 						keywords={[".NET", "C#", "Kubernetes", "Helm", "TypeScript", "NestJS"]}
@@ -406,8 +409,8 @@ function App() {
 					/>
 				</div>
 
-				<div id="presentation" className="flex flex-col gap-4 mt-4">
-					<h1 className="text-4xl font-bold mt-16 mb-4">발표</h1>
+				<div id="presentation" className="flex flex-col gap-4 mt-8">
+					<h1 className="text-2xl font-bold mt-16 mb-4">발표</h1>
 					<Presentation
 						title="PyCon Korea 2020 - 직렬화 포맷 개량과 라이브러리 구현"
 						videoLink="https://www.youtube.com/watch?v=Z4nx-cONpAc"
@@ -415,8 +418,8 @@ function App() {
 					/>
 				</div>
 
-				<div id="activity" className="flex flex-col gap-4 mt-4">
-					<h1 className="text-4xl font-bold mt-16 mb-4">오픈소스 활동</h1>
+				<div id="activity" className="flex flex-col gap-4 mt-8">
+					<h1 className="text-2xl font-bold mt-16 mb-4">오픈소스 활동</h1>
 					<Activity
 						title="RustPython/RustPython"
 						link="https://github.com/RustPython/RustPython"
