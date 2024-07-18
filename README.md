@@ -9,7 +9,7 @@ permalink: /
   // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 200 to 900
 
-body {
+.markdown-body {
   font-family: "Noto Serif KR", serif;
   font-optical-sizing: auto;
   <!-- font-weight: <weight>; -->
