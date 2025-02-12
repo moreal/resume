@@ -1,0 +1,98 @@
+body {
+  margin: 80px;
+
+  font-family: "Noto Serif KR", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+#contact ul {
+  padding-left: 0;
+}
+
+#contact li {
+  list-style-type: none;
+
+  font-size: 16px;
+  line-height: 16px;
+
+  margin-bottom: 8px;
+}
+
+h2 {
+  margin-top: 40px;
+}
+
+h1 img,
+h2 img,
+h3 img,
+h4 img {
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+}
+
+.work-experience h3 {
+  margin-bottom: 4px;
+}
+
+.work-experience .role-metadata {
+  margin: 0;
+
+  color: gray;
+
+  font-size: medium;
+}
+
+/* 미디어 쿼리 추가 */
+@media (max-width: 1200px) {
+  body {
+    margin: 60px;
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    margin: 40px;
+  }
+}
+
+@media print {
+  .page-break {
+    break-before: page;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    break-after: avoid;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    break-inside: avoid;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #ffffff;
+  }
+
+  .role-metadata {
+    color: #bbbbbb;
+  }
+
+  a {
+    color: #bb86fc;
+  }
+
+  #contact li a {
+    color: #bb86fc;
+  }
+}
