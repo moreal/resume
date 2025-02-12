@@ -28,7 +28,7 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Install pandoc
-        run: brew install pandoc
+        run: sudo apt-get install pandoc
       
       - name: Build HTML
         run: |
