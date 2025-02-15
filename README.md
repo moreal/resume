@@ -76,7 +76,9 @@ P2P 멀티플레이어 온라인 게임을 만들기 위한 오픈소스 라이�
 
 ### [gif2webp.com](https://gif2webp.com) ([GitHub](https://github.com/moreal/gif2webp.com))
 
-gif2webp.com 는 서버없이 브라우저에서 GIF를 WebP로 변경하는 간단한 웹 어플리케이션입니다. 서비스를 만들게 된 계기는 어느 한 디자인 포트폴리오 게시 서비스가 GIF 지원을 중단하고 WebP만을 지원하기로 하였는데 마땅한 변환 도구가 함께 제공되지 않아 지인이 불편함을 겪고 있었기 때문입니다.
+gif2webp.com 는 서버없이 브라우저에서 GIF를 WebP로 변경하는 간단한 웹 어플리케이션입니다. 어느 한 디자인 포트폴리오 서비스가 GIF 지원을 중단하고 WebP만을 지원하기로 하였는데 마땅한 변환 도구가 함께 제공되지 않아 개발자가 아닌 지인이 CLI로 변환을 진행하는 불편함을 해결하기 위해 제작하였습니다.
+
+사용한 기술: React, TypeScript.
 
 ### bencodex-rs ([GitHub](https://github.com/moreal/bencodex-rs))
 
