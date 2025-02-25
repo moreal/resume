@@ -7,9 +7,10 @@
 # 이도건
 
 2013년 즈음 마인크래프트 플러그인 개발과 RPG Maker를 통해 처음 개발에 관심을 가졌습니다.  
-2017년 고등학교에서 개발을 처음 시작하였고, 2019년 중 초기 스타트업에 입사하여 소프트웨어 엔지니어로 일해오고 있습니다.
+2017년 고등학교에서 개발을 처음 시작하였고, 2019년 중 초기 스타트업에 입사하여 소프트웨어 엔지니어로 일해오고 있습니다.  
 
-오픈소스와 CTF 경험을 통해 언어나 스택에 상관없이 빠르게 코드를 파악하고 구현 및 수정할 수 있는 것이 장점이라고 생각합니다.  
+불편함을 해결하는 것과 같이 사람들에게 도움이 되는 일을 하고 싶어하고, 기술적인 부분은 물론이고 비기술적인 부분도 포함하여 문제를 해결하는 것에 관심이 많습니다.  
+직군에 따른 업무 경계 없이 필요에 따라 기여하는 것을 개인적으로 선호합니다.
 
 <div id="contact">
 
@@ -66,35 +67,28 @@ P2P 멀티플레이어 온라인 게임을 만들기 위한 오픈소스 라이�
 
   사용한 기술: TypeScript, Node.js, Prisma, PostgreSQL.
 - 외부 개발자들이 쉽게 트랜잭션을 만들수 있도록 JavaScript 라이브러리들을 개발하여 배포하였습니다. ([GitHub 저장소](https://github.com/planetarium/lib9c/tree/fce75af69134033b02badf9fabf7e789d981d651/integrations/javascript/%40planetarium))
-- [Nine Chronicles] 체인의 최신 상태를 보다 쉽게 사용할 수 있도록 하는 데이터 적재 및 API 서버를 개발하였습니다. ([GitHub](https://github.com/planetarium/mimir))
+- [Nine Chronicles] 체인의 최신 상태를 보다 쉽게 사용할 수 있도록 하는 데이터 적재 및 API 서버를 개발하였습니다. ([GitHub 저장소](https://github.com/planetarium/mimir))
   
   사용한 기술: C#, .NET, GraphQL, MongoDB.
 
 </div>
 
-<h2 class="page-break">사이드 프로젝트</h2>
-
-### [gif2webp.com](https://gif2webp.com) ([GitHub](https://github.com/moreal/gif2webp.com))
-
-gif2webp.com 는 서버없이 브라우저에서 GIF를 WebP로 변경하는 간단한 웹 어플리케이션입니다. 어느 한 디자인 포트폴리오 서비스가 GIF 지원을 중단하고 WebP만을 지원하기로 하였는데 마땅한 변환 도구가 함께 제공되지 않아 개발자가 아닌 지인이 CLI로 변환을 진행하는 불편함을 해결하기 위해 제작하였습니다.
-
-사용한 기술: React, TypeScript.
-
-### bencodex-rs ([GitHub](https://github.com/moreal/bencodex-rs))
-
-[Libplanet]에서 사용하는 [Bencodex] 직렬화 포맷의 Rust 구현체입니다.  역직렬화하여 JSON으로 변환하는 기능도 구현하여 사내 업무에 활용하였습니다.
-
-[Bencodex]: https://github.com/planetarium/bencodex
-
-## 오픈 소스
+<h2 class="page-break">오픈 소스</h2>
 
 번역, 오타 수정, 버그 수정 및 기능 추가 등 여러 방식으로 오픈소스에 기여하고 있습니다. 모르는 것들을 배우기도 하고, 업무에 필요한 버그를 수정하기도 합니다.
 
 - [RustPython](https://github.com/RustPython/RustPython/pulls?q=author:moreal): 오픈소스 컨트리뷰션 아카데미를 계기로 참여하여 Union 타입 구현 등 기능 구현으로 기여하고 있습니다.
-- [clig.kr](https://clig.kr) ([source](https://github.com/moreal/cli-guidelines-kr)): Planetarium Labs 에서 근무하며 CLI 앱을 만들일이 많았습니다. CLI 앱 작성 가이드인 clig.dev를 번역했습니다. [GeekNews에도 공유](https://news.hada.io/topic?id=19007)되었습니다.
+- [clig.kr](https://clig.kr) ([GitHub 저장소](https://github.com/moreal/cli-guidelines-kr)): Planetarium Labs 에서 근무하며 CLI 앱을 만들일이 많았습니다. CLI 앱 작성 가이드인 clig.dev를 번역했습니다. [GeekNews에도 공유](https://news.hada.io/topic?id=19007)되었습니다.
 - [DefinitelyTyped mixpanel-browser](https://github.com/DefinitelyTyped/DefinitelyTyped/pulls?q=is:pr+author:moreal): 업무에 사용하던 Mixpanel 라이브러리의 타입 정의에 오류가 있어 수정했습니다. 해당 패키지의 메인테이너로 다른 기여자들의 PR을 리뷰하기도 하였습니다.
 - [GraphQL .NET](https://github.com/search?q=org:graphql-dotnet+author:moreal&type=pullrequests): graphql-dotnet을 사용하던 중 만난 버그를 수정하여 기여하였습니다.
 - [rust-analyzer](https://github.com/rust-lang/rust-analyzer/pull/11869): Rust 개발을 하던 중 코드블록 하이라이팅이 잘 되지 않는 문제를 발견하여 해결하였습니다.
+
+다른 오픈소스 프로젝트에 기여하는 것 외에도 개인 프로젝트도 오픈소스 라이선스로 공개하고 있습니다.
+
+- [gif2webp.com](https://gif2webp.com) ([GitHub 저장소](https://github.com/moreal/gif2webp.com)): 서버없이 브라우저에서 GIF를 WebP로 변경하는 간단한 웹 어플리케이션입니다. GIF를 WebP로 변환하기 위해 익숙하지 않은 CLI를 사용하는 디자이너 지인의 불편함을 개선하기 위해 개발하였습니다.
+- [bencodex-rs](https://github.com/moreal/bencodex-rs): [Libplanet]에서 사용하는 [Bencodex] 직렬화 포맷의 Rust 구현체입니다.  역직렬화하여 JSON으로 변환하는 기능도 구현하여 사내 업무에 활용하였습니다.
+
+[Bencodex]: https://github.com/planetarium/bencodex
 
 
 <h2 class="page-break">학력</h2>
@@ -108,6 +102,8 @@ gif2webp.com 는 서버없이 브라우저에서 GIF를 WebP로 변경하는 간
 
 ## 글
 
-- [How Go interface works](https://moreal.dev/blog/go-interface/)
-- [페타바이트 트래픽 원인 분석기
-](https://moreal.dev/blog/petabyte-traffic/)
+- 기술
+  - [How Go interface works](https://moreal.dev/blog/go-interface/)
+  - [페타바이트 트래픽 원인 분석기](https://moreal.dev/blog/petabyte-traffic/)
+- 비기술
+  - [Phanpy 번역 기여하기](https://moreal.dev/blog/phanpy-translation-guide/)
