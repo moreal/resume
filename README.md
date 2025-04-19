@@ -86,6 +86,7 @@ P2P 멀티플레이어 온라인 게임을 만들기 위한 오픈소스 라이�
 다른 오픈소스 프로젝트에 기여하는 것 외에도 개인 프로젝트도 오픈소스 라이선스로 공개하고 있습니다.
 
 - [gif2webp.com](https://gif2webp.com) ([GitHub 저장소](https://github.com/moreal/gif2webp.com)): 서버없이 브라우저에서 GIF를 WebP로 변경하는 간단한 웹 어플리케이션입니다. GIF를 WebP로 변환하기 위해 익숙하지 않은 CLI를 사용하는 디자이너 지인의 불편함을 개선하기 위해 개발하였습니다.
+- [agilestory.blog](https://agilestory.blog) ([GitHub 저장소](https://github.com/moreal/agilestory.blog)): "애자일 이야기" 블로그 글을 쉽게 찾아 읽을 수 있도록 도와주는 서비스입니다.
 - [bencodex-rs](https://github.com/moreal/bencodex-rs): [Libplanet]에서 사용하는 [Bencodex] 직렬화 포맷의 Rust 구현체입니다.  역직렬화하여 JSON으로 변환하는 기능도 구현하여 사내 업무에 활용하였습니다.
 
 [Bencodex]: https://github.com/planetarium/bencodex
