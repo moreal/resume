@@ -1,7 +1,10 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="./style.css">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
 <title>이력서</title>
 
 # 이도건
@@ -108,3 +111,5 @@ P2P 멀티플레이어 온라인 게임을 만들기 위한 오픈소스 라이�
   - [페타바이트 트래픽 원인 분석기](https://moreal.dev/blog/petabyte-traffic/)
 - 비기술
   - [Phanpy 번역 기여하기](https://moreal.dev/blog/phanpy-translation-guide/)
+
+</body>
