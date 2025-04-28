@@ -26,9 +26,7 @@
 
 ## 연락처
 
-- GitHub: [@moreal](https://github.com/moreal)
 - 이메일: [dev.moreal@gmail.com](mailto:dev.moreal@gmail.com)
-- 웹사이트: [https://moreal.dev](https://moreal.dev)
 - LinkedIn: [devmoreal](https://www.linkedin.com/in/devmoreal/)
 
 </div>
