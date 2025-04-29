@@ -10,11 +10,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./style.css">
+  <title>이력서</title>
 </head>
 <body>
-<title>이력서</title>
 
-# 이도건
+# 이력서
 
 2013년 즈음 마인크래프트 플러그인 개발과 RPG Maker를 통해 처음 개발에 관심을 가졌습니다.  
 2017년 고등학교에서 개발을 처음 시작하였고, 2019년 중 초기 스타트업에 입사하여 소프트웨어 엔지니어로 일해오고 있습니다.  
