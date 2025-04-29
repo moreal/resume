@@ -19,10 +19,11 @@ else
   TARGET_FILE="build/dx.html"
 fi
 
-FILES=("$SOURCE_FILE" style.css)
+FILES=("$SOURCE_FILE" style.css logo.svg)
 
 build() {
   cp style.css build/style.css
+  cp logo.svg build/logo.svg
   pandoc "$SOURCE_FILE" -o "$TARGET_FILE"
 }
 
