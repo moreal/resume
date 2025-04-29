@@ -19,7 +19,7 @@ else
   TARGET_FILE="build/dx.html"
 fi
 
-FILES=($SOURCE_FILE style.css)
+FILES=("$SOURCE_FILE" style.css)
 
 build() {
   cp style.css build/style.css
@@ -36,7 +36,7 @@ mkdir build
 build
 
 echo "Start watch"
-fswatch -o ${FILES[@]} | while read; do build; done &
+fswatch -o "${FILES[@]}" | while read -r; do build; done &
 
 sleep 1
 
