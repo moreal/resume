@@ -13,10 +13,8 @@ fi
 # 페이지 유형에 따라 다른 설정
 if [[ "$PAGE_TYPE" == "default" ]]; then
   SOURCE_FILE="resume/DEFAULT.md"
-  TARGET_FILE="build/default.html"
 else
   SOURCE_FILE="resume/DX.md"
-  TARGET_FILE="build/dx.html"
 fi
 
 FILES=("$SOURCE_FILE" style.css logo.svg)
@@ -24,7 +22,7 @@ FILES=("$SOURCE_FILE" style.css logo.svg)
 build() {
   cp style.css build/style.css
   cp logo.svg build/logo.svg
-  pandoc "$SOURCE_FILE" -o "$TARGET_FILE"
+  pandoc "$SOURCE_FILE" -o "build/index.html"
 }
 
 trap 'kill $(jobs -p)' SIGINT
@@ -38,10 +36,11 @@ build
 
 echo "Start watch"
 fswatch -o "${FILES[@]}" | while read -r; do build; done &
+python3 -m http.server 8000 --directory build &
 
 sleep 1
 
-echo "Open $TARGET_FILE"
-open $TARGET_FILE
+echo "Open http://localhost:8000/index.html in your browser"
+open http://localhost:8000/index.html
 
 wait
