@@ -4,12 +4,6 @@ This repository contains the scripts and original materials for generating morea
 
 ## Build
 
-To build `resume/DEFAULT.md`:
-
-```
-./scripts/watch.sh default
-```
-
 To build `resume/DX.md`:
 
 ```

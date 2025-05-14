@@ -35,7 +35,6 @@ jobs:
           set -ev
 
           mkdir build
-          pandoc resume/DEFAULT.md -o build/index.html
           pandoc resume/DX.md -o build/dx.html
           cp style.css build/style.css
 

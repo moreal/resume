@@ -1,19 +1,17 @@
 #!/bin/bash
 
 # 기본값은 default로 설정
-PAGE_TYPE=${1:-default}
+PAGE_TYPE=${1:-dx}
 
 # 유효한 인수 확인
-if [[ "$PAGE_TYPE" != "default" && "$PAGE_TYPE" != "dx" ]]; then
-  echo "Error: Argument must be either 'index' or 'dx'"
-  echo "Usage: $0 [default|dx]"
+if [[ "$PAGE_TYPE" != "dx" ]]; then
+  echo "Error: Argument must be 'dx'"
+  echo "Usage: $0 [dx]"
   exit 1
 fi
 
 # 페이지 유형에 따라 다른 설정
-if [[ "$PAGE_TYPE" == "default" ]]; then
-  SOURCE_FILE="resume/DEFAULT.md"
-else
+if [[ "$PAGE_TYPE" == "dx" ]]; then
   SOURCE_FILE="resume/DX.md"
 fi
 
