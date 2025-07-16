@@ -47,7 +47,7 @@ P2P 멀티플레이어 온라인 게임을 만들기 위한 오픈소스 라이�
 
 외에도, [Nine Chronicles] 메인넷과 Ethereum 사이에 재화가 오갈수 있도록 하는 수탁형 브릿지를 개발하였습니다. 회사 기조에 맞게 오픈소스로 개발하는 것은 물론이고, 투명성을 위해 수동으로 토큰 발행하는 경우들을 [저장소 README를 통해 기록하여](https://github.com/planetarium/NineChronicles.EthBridge/commits/a61801ea76b14c19b4ee8d8d404e5f7a387c016c/README.md?author=moreal) 이런 것들이 암암리에 진행되지 않도록 주도적으로 챙겼습니다.
 
-사용한 기술: C#, .NET, RocksDB, Kubernetes, Helm, Node.js, SQLite.
+사용한 기술: C#, .NET, RocksDB, Kubernetes, Helm, TypeScript, Node.js, SQLite.
 
 
 ### DX 엔지니어
@@ -134,7 +134,7 @@ RustPython 작업을 하며 CPython을 참조하다 발견한 문서 오류를 �
 
 ## 글
 
-저를 이해하시기에 도움이 되실 만한 글을 첨부드립니다.
+저를 이해하시기에 도움이 되시길 바라며 작성했던 글 중 몇 가지를 첨부합니다.
 
 - 기술
   - [페타바이트 트래픽 원인 분석기](https://blog.moreal.dev/2023/03/petabyte-traffic/)
