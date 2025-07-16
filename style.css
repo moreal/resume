@@ -1,7 +1,7 @@
 body {
   margin: 80px;
 
-  font-family: "Noto Serif KR", serif;
+  font-family: "Noto Sans KR", serif;
   font-optical-sizing: auto;
   font-style: normal;
 
@@ -30,7 +30,12 @@ h4 img {
 }
 
 a {
-  text-underline-offset: 6px;
+  color: #2b4ee7;
+}
+
+dl > dd {
+  margin-left: 5rem;
+  margin-top: -1.5rem;
 }
 
 .work-experience h3 {
