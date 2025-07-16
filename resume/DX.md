@@ -92,7 +92,7 @@ P2P 멀티플레이어 온라인 게임을 만들기 위한 오픈소스 라이�
 
 - [RustPython](https://github.com/RustPython/RustPython/pulls?q=author:moreal): 오픈소스 컨트리뷰션 아카데미를 계기로 참여하여 Union 타입 구현 등 기능 구현으로 기여하고 있습니다.  
 RustPython 작업을 하며 CPython을 참조하다 발견한 문서 오류를 수정하는 기여를 하기도 하였습니다. ([CPython PR 목록](https://github.com/python/cpython/issues?q=author%3Amoreal))
-- [VitePress](https://github.com/vuejs/vitepress/issues?q=author%3Amoreal): [Fedify] 문서를 읽던 중 발견한 localSearch 플러그인 관련 버그를 수정했습니다. ([관련 글]([vitepress-localsearch-debugging-post]))
+- [VitePress](https://github.com/vuejs/vitepress/issues?q=author%3Amoreal): [Fedify] 문서를 읽던 중 발견한 localSearch 플러그인 관련 버그를 수정했습니다. ([관련 글][vitepress-localsearch-debugging-post])
 - [clig.kr](https://clig.kr) ([GitHub 저장소](https://github.com/moreal/cli-guidelines-kr)): CLI 앱을 작성할 때 종종 참고하던 CLI 앱 작성 가이드인 clig.dev를 번역하였습니다.
 - [DefinitelyTyped mixpanel-browser](https://github.com/DefinitelyTyped/DefinitelyTyped/pulls?q=is:pr+moreal): 업무에 사용하던 Mixpanel 라이브러리의 타입 정의에 오류가 있어 수정했습니다. 해당 패키지의 메인테이너로 다른 기여자들의 PR을 리뷰하며 기여하기도 하였습니다.
 - [GraphQL .NET](https://github.com/search?q=org:graphql-dotnet+author:moreal&type=pullrequests): 회사 업무 중 문제가 되는 버그를 고치는 PR을 올려 기여하였습니다.
