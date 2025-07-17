@@ -83,11 +83,15 @@ P2P 멀티플레이어 온라인 게임을 만들기 위한 오픈소스 라이�
 
 또한 이후 이런 처리 방식은 사내에서 일반화 되었고, 이전에 비해 트랜잭션 유실에 대해서 큰 문제가 발생하지 않을 수 있게 되었습니다.
 
+사용한 기술: TypeScript, Node.js, NestJS, PostgreSQL, Grafana.
+
 #### 최신 상태 API 서비스 개발 ([GitHub 저장소](https://github.com/planetarium/mimir))
 
 블록체인의 특성상 블록들을 모두 연산하면 원하는 상태를 얻을 수 있지만, 스토리지 용량과 성능 등의 문제로 상태를 얻기 어려운 문제가 있습니다. 블록체인 노드와 분리된 형태로, 최신 상태만을 보존하는 동기화 기능을 제공하여 최신 상태를 쉽게 사용할 수 있도록 하는 서비스를 개발하였습니다.
 
 사용하길 기대하는 유저가 사내에 있지 않으므로 요청의 형태를 예측할 수 없기 때문에 유연하게 요청할 수 있도록 GraphQL로 API를 제공했습니다. 이를 활용하여 외부 개발자가 자신만의 마켓 서비스를 만들기도 하였으며, 게임 클라이언트 중 랭킹을 보여주는데 사용되기도 하였습니다.
+
+사용한 기술: C#, .NET, MongoDB, GraphQL.
 
 #### 리플레이 기능을 통한 생산성 향상
 
@@ -124,7 +128,7 @@ RustPython 작업을 하며 CPython을 참조하다 발견한 문서 오류를 �
 - [agilestory.blog](https://agilestory.blog) ([GitHub 저장소](https://github.com/moreal/agilestory.blog)): "애자일 이야기" 블로그 글을 쉽게 찾아 읽을 수 있도록 도와주는 서비스입니다.
   - 저 이외에도 "애자일 이야기" 블로그의 글을 검색하여 찾아보려는 사람들이 있는 것을 알게 되어 개발하였습니다.
 - [bencodex-rs](https://crates.io/crates/bencodex-rs) ([GitHub 저장소](https://github.com/moreal/bencodex-rs)): [Libplanet]에서 사용하는 [Bencodex] 직렬화 포맷의 Rust 구현체입니다.
-  - 개인적인 사이드프로젝트로 시작했지만 사내 업무 과정 중 상태를 열어보는 것이 불편하여 [Bencodex JSON 스펙][bencodex-json]에 따라 JSON 형식으로 변환하는 기능을 마저 구현하고 CLI로 인터페이스를 만들어서 사내 업무에 활용하였습니다.
+  - 사내 업무 과정 중 상태를 열어보는 것이 불편하여 [Bencodex JSON 스펙][bencodex-json]에 따라 JSON 형식으로 변환하는 기능을 마저 구현하고 CLI로 인터페이스를 만들어서 사내 업무에 활용하였습니다.
 - [gif2webp.com](https://gif2webp.com) ([GitHub 저장소](https://github.com/moreal/gif2webp.com)): 서버없이 브라우저에서 GIF를 WebP로 변경하는 간단한 웹 어플리케이션입니다. GIF를 WebP로 변환하기 위해 익숙하지 않은 CLI를 사용하는 동료 디자이너의 불편함을 개선하기 위해 개발하였습니다.
 - [9c.market](https://9c.market) ([GitHub 저장소](https://github.com/moreal/9c.market))
   - [Nine Chronicles]의 온체인 마켓의 상품들과 인앱 결제 상품들을 웹에서 볼 수 있게 도와주는 서비스입니다.
@@ -138,8 +142,9 @@ RustPython 작업을 하며 CPython을 참조하다 발견한 문서 오류를 �
 
 기타 다른 오픈소스 활동들은 제 [GitHub 프로필](https://github.com/moreal)을 참조해주세요.
 
+<span class="page-break"></span>
 
-<h2 class="page-break">학력</h2>
+## 학력
 
 2017-2020 [대덕소프트웨어마이스터고등학교](https://dsmhs.djsch.kr/main.do) 정보보안과
 
