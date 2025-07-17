@@ -14,7 +14,7 @@
 
 <dl>
   <dt>이메일:</dt>
-  <dd>dev.moreal@gmail.com</dd>
+  <dd>[dev.moreal@gmail.com](mailto:dev.moreal@gmail.com)</dd>
   <dt>GitHub:</dt>
   <dd>[@moreal](https://github.com/moreal)</dd>
   <dt>전화번호:</dt>
