@@ -26,8 +26,6 @@
 
 제품의 초기부터 성장 과정을 따라 블록체인 코어 엔지니어, DX 엔지니어 등 다양한 역할로 넓게 일하며 경험을 쌓았습니다. 오픈소스 기여를 즐겨하며 이를 통해서도 다양한 경험을 쌓았습니다. 타입 시스템이나 도구를 활용하여 사전에 실수를 방지할 수 있는 시스템을 갖추고자 노력하였고, 반복되는 작업을 자동화하여 생산성 향상에 힘썼습니다.
 
-지금까지 블록체인·게임 도메인에서 5년간 경험을 쌓았지만, 블록체인 이외의 새로운 도메인에서 경험을 쌓고자 기회를 찾고 있습니다.
-
 <div class="work-experience">
 
 ## 업무 경험
@@ -35,7 +33,7 @@
 ### 블록체인 코어 엔지니어
 <p class='role-metadata'>Planetarium, 2019.08. ~ 2020.12.</p>
 
-P2P 멀티플레이어 온라인 게임을 만들기 위한 오픈소스 라이브러리 [Libplanet] 개발에 주로 참여하였습니다.  
+P2P 멀티플레이어 온라인 게임을 만들기 위한 오픈소스 라이브러리 [Libplanet] 개발에 주로 참여하였습니다.
 
 상태 변경 로직이 결정적이지 않아 노드 별로 다른 상태를 가지고 있음에도 적절히 검증하지 않아 알기 어려울 뿐더러, 상태를 조회하는데도 성능 문제가 있었습니다. 머클 트리를 활용하여 상태 검증을 용이하게 하여 결정적인 상태를 유지하도록 하는데 기여하였고, 중복 저장을 줄여 저장 공간도 확보함과 동시에 조회 성능도 향상시켰습니다.
 
@@ -104,7 +102,7 @@ Libplanet을 개발하며 인터페이스에 대한 이해가 있었기 때문�
 
 번역, 오타 수정, 버그 수정 및 기능 추가 등 여러 방식으로 오픈소스에 기여하고 있습니다. 모르는 것들을 배우기도 하고, 업무에 필요한 버그를 직접 수정하기도 합니다. 낯선 코드를 이해하는 것에 크게 어려움을 느끼지 않고 디버깅하는 것을 즐깁니다.
 
-- [RustPython](https://github.com/RustPython/RustPython/pulls?q=author:moreal): 오픈소스 컨트리뷰션 아카데미를 계기로 참여하여 Union 타입 구현 등 기능 구현으로 기여하고 있습니다.  
+- [RustPython](https://github.com/RustPython/RustPython/pulls?q=author:moreal): 오픈소스 컨트리뷰션 아카데미를 계기로 참여하여 Union 타입 구현 등 기능 구현으로 기여하고 있습니다.
 RustPython 작업을 하며 CPython을 참조하다 발견한 문서 오류를 수정하는 기여를 하기도 하였습니다. ([CPython PR 목록](https://github.com/python/cpython/issues?q=author%3Amoreal))
 - [VitePress](https://github.com/vuejs/vitepress/issues?q=author%3Amoreal): [Fedify] 문서를 읽던 중 발견한 localSearch 플러그인 관련 버그를 수정했습니다. ([관련 글][vitepress-localsearch-debugging-post])
 - [clig.kr](https://clig.kr) ([GitHub 저장소](https://github.com/moreal/cli-guidelines-kr)): CLI 앱을 작성할 때 종종 참고하던 CLI 앱 작성 가이드인 clig.dev를 번역하였습니다.
