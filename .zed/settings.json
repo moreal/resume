@@ -1,0 +1,12 @@
+{
+  "languages": {
+    "Markdown": {
+      "formatter": {
+        "external": {
+          "command": "hongdown",
+          "arguments": ["-"],
+        },
+      },
+    },
+  },
+}
