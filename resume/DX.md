@@ -166,20 +166,20 @@ GraphQL 사용법을 모르는 분들에게 불편한 방법이고 인벤토리 
 합니다. 낯선 코드를 이해하는 것에 크게 어려움을 느끼지 않고 디버깅하는 것을
 즐깁니다.
 
- -  [RustPython]: 오픈소스 컨트리뷰션 아카데미를 계기로 참여하여 Union 타입 구현 등
+ -  [RustPython]\: 오픈소스 컨트리뷰션 아카데미를 계기로 참여하여 Union 타입 구현 등
     기능 구현으로 기여하였습니다. RustPython 작업을 하며 CPython을 참조하다
     발견한 문서 오류를 수정하는 기여를 하기도 하였습니다. ([CPython PR 목록])
- -  [VitePress]: [Fedify] 문서를 읽던 중 발견한 localSearch 플러그인 관련 버그를
+ -  [VitePress]\: [Fedify] 문서를 읽던 중 발견한 localSearch 플러그인 관련 버그를
     수정했습니다. ([관련 글][vitepress-localsearch-debugging-post])
  -  [clig.kr] ([GitHub 저장소]): CLI 앱을 작성할 때 종종 참고하던 CLI 앱 작성
     가이드인 clig.dev를 번역하였습니다.
- -  [DefinitelyTyped mixpanel-browser]: 업무에 사용하던 Mixpanel 라이브러리의 타입
+ -  [DefinitelyTyped mixpanel-browser]\: 업무에 사용하던 Mixpanel 라이브러리의 타입
     정의에 오류가 있어 수정했습니다. 해당 패키지의 메인테이너로 다른 기여자들의
     PR을 리뷰하며 기여하기도 하였습니다.
- -  [GraphQL .NET]: 회사 업무 중 문제가 되는 버그를 고치는 PR을 올려 기여하였습니다.
- -  [Deno]: [Hackers' Pub] 프로젝트를 작업하던 중 발견한 `deno install` 시 패키지
+ -  [GraphQL .NET]\: 회사 업무 중 문제가 되는 버그를 고치는 PR을 올려 기여하였습니다.
+ -  [Deno]\: [Hackers' Pub] 프로젝트를 작업하던 중 발견한 `deno install` 시 패키지
     설치가 완료되기 전에 패치가 적용되는 버그를 수정하였습니다.
- -  [rust-analyzer]: Rust 개발을 하던 중 코드블록 하이라이팅이 잘 되지 않는 문제를
+ -  [rust-analyzer]\: Rust 개발을 하던 중 코드블록 하이라이팅이 잘 되지 않는 문제를
     발견하여 해결하였습니다.
 
 <span class="page-break"></span>
