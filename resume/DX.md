@@ -177,6 +177,8 @@ GraphQL 사용법을 모르는 분들에게 불편한 방법이고 인벤토리 
     정의에 오류가 있어 수정했습니다. 해당 패키지의 메인테이너로 다른 기여자들의
     PR을 리뷰하며 기여하기도 하였습니다.
  -  [GraphQL .NET]: 회사 업무 중 문제가 되는 버그를 고치는 PR을 올려 기여하였습니다.
+ -  [Deno]: [Hackers' Pub] 프로젝트를 작업하던 중 발견한 `deno install` 시 패키지
+    설치가 완료되기 전에 패치가 적용되는 버그를 수정하였습니다.
  -  [rust-analyzer]: Rust 개발을 하던 중 코드블록 하이라이팅이 잘 되지 않는 문제를
     발견하여 해결하였습니다.
 
@@ -218,6 +220,8 @@ GraphQL 사용법을 모르는 분들에게 불편한 방법이고 인벤토리 
 [clig.kr]: https://clig.kr
 [DefinitelyTyped mixpanel-browser]: https://github.com/DefinitelyTyped/DefinitelyTyped/pulls?q=is:pr+moreal
 [GraphQL .NET]: https://github.com/search?q=org:graphql-dotnet+author:moreal&type=pullrequests
+[Deno]: https://github.com/denoland/deno/pull/31711
+[Hackers' Pub]: https://github.com/hackers-pub/hackerspub
 [rust-analyzer]: https://github.com/rust-lang/rust-analyzer/pull/11869
 [agilestory.blog]: https://agilestory.blog
 [bencodex-rs]: https://crates.io/crates/bencodex-rs
