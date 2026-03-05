@@ -109,7 +109,7 @@ Libplanet의 방식에서는 트랜잭션 실행 로직을 C# 코드로 작성�
 
 <span class="page-break"></span>
 
-#### 최신 상태 API 서비스 개발 ([GitHub 저장소])
+#### 최신 상태 API 서비스 개발 ([GitHub 저장소][9c-mimir])
 
 블록체인의 특성상 블록들을 모두 연산하면 원하는 상태를 얻을 수 있지만, 스토리지
 용량과 성능 등의 문제로 상태를 얻기 어려운 문제가 있습니다. 블록체인 노드와
@@ -137,7 +137,7 @@ Libplanet을 개발하며 인터페이스에 대한 이해가 있었기 때문�
 
 <span class="page-break"></span>
 
-#### 상태 웹뷰어 구현 ([GitHub 저장소])
+#### 상태 웹뷰어 구현 ([GitHub 저장소][9c-board])
 
 게임 기획 및 운영 업무를 수행할 때면 게임의 상태 및 기록을 조회할 필요가 있을
 때가 있습니다. 그런 경우에 개발자에게 조회를 요청하여 데이터를 받아가시거나,
@@ -153,9 +153,26 @@ GraphQL 사용법을 모르는 분들에게 불편한 방법이고 인벤토리 
 확인할 때, 아이템 보상이 실제로 잘 지급 되었는지 확인할 때, 버그로 아이템이
 과다 생산되었을때 얼마나 가지고 있는지를 확인할 때 유용하게 사용되었습니다.
 
+#### 게임 재화 지급 큐 서비스 구현 ([GitHub 저장소][9c-rudolf])
+
+[Nine Chronicles] 모바일 버전 출시 사전 예약 보상으로 인해 많은 유저에게 각각 보상 재화를 지급해야 하는 상황이 있었습니다.
+약 10만 유저에게 아이템 등의 재화를 지급해야 하는 상황이었고, [Nine Chronicles] 블록체인은 블록당 수용될 수 있는
+트랜잭션의 수 제한(200개)과 블록 실행 시간에 제한이 있었기 때문에 게임플레이에 문제를 주지 않기 위해서는 블록을 재화 지급 트랜잭션으로
+포화시켜서는 안 되었습니다. 때문에 적절히 여러 트랜잭션으로 분할하여 배치로 재화를 지급해야 했습니다.
+
+또한 실수로 재화 지급 요청을 중복 요청하는 것을 막기 위해 고유한 요청 ID를 명시적으로 요청하는 쪽에서
+제공하도록 설계하였고, 잔고 부족 등의 이유로 실패한 지급 요청을 모아 재시도하는 로직도 갖추었습니다.
+
+전체/진행 중인/실패한/완료한 지급 요청들을 비롯한 메트릭들을 만들어 수집하고 이를 확인할 수 있는 Grafana 대시보드를
+만들어 모바일 버전 출시 이후 보상이 지급되는 과정을 모니터링하였습니다.
+
+모바일 버전 출시 이후로도 많은 재화를 안정적으로 지급하기 위한 내부 컴포넌트로써 활용되었습니다.
+
 </div>
 
-[GitHub 저장소]: https://github.com/planetarium/9c-board
+[9c-mimir]: https://github.com/planetarium/mimir
+[9c-board]: https://github.com/planetarium/9c-board
+[9c-rudolf]: https://github.com/planetarium/9c-rudolf
 
 
 오픈 소스
@@ -164,14 +181,16 @@ GraphQL 사용법을 모르는 분들에게 불편한 방법이고 인벤토리 
 번역, 오타 수정, 버그 수정 및 기능 추가 등 여러 방식으로 오픈소스에 기여하고
 있습니다. 모르는 것들을 배우기도 하고, 업무에 필요한 버그를 직접 수정하기도
 합니다. 낯선 코드를 이해하는 것에 크게 어려움을 느끼지 않고 디버깅하는 것을
-즐깁니다.
+즐깁니다. 버그 수정으로 기여할 때는 재발 방지를 위해 회귀 테스트를 추가하고
+문맥 전달을 위해 PR 설명을 자세히 적으려고 노력하며 이는 보통 업무에서도
+일맥상통하는 부분이라고 생각합니다.
 
  -  [RustPython]\: 오픈소스 컨트리뷰션 아카데미를 계기로 참여하여 Union 타입 구현 등
     기능 구현으로 기여하였습니다. RustPython 작업을 하며 CPython을 참조하다
     발견한 문서 오류를 수정하는 기여를 하기도 하였습니다. ([CPython PR 목록])
  -  [VitePress]\: [Fedify] 문서를 읽던 중 발견한 localSearch 플러그인 관련 버그를
     수정했습니다. ([관련 글][vitepress-localsearch-debugging-post])
- -  [clig.kr] ([GitHub 저장소]): CLI 앱을 작성할 때 종종 참고하던 CLI 앱 작성
+ -  [clig.kr] ([GitHub 저장소][github-clig-kr]): CLI 앱을 작성할 때 종종 참고하던 CLI 앱 작성
     가이드인 clig.dev를 번역하였습니다.
  -  [DefinitelyTyped mixpanel-browser]\: 업무에 사용하던 Mixpanel 라이브러리의 타입
     정의에 오류가 있어 수정했습니다. 해당 패키지의 메인테이너로 다른 기여자들의
@@ -181,32 +200,37 @@ GraphQL 사용법을 모르는 분들에게 불편한 방법이고 인벤토리 
     설치가 완료되기 전에 패치가 적용되는 버그를 수정하였습니다.
  -  [rust-analyzer]\: Rust 개발을 하던 중 코드블록 하이라이팅이 잘 되지 않는 문제를
     발견하여 해결하였습니다.
+ -  [slidev](https://github.com/slidevjs/slidev/pull/2461)\: [slidev-addon-subtitle]을 개발하는 과정에서 발견한 포트 경합 문제를 버그를 수정하였습니다.
+ -  [Fedify][fedify-pr-list]\: [ap-thread-reader]를 구현하며 발견한 버그를 수정하였습니다.
+    또한 CI 빌드 과정에서 경합이 발생하는 부분을 수정하였고, 그 과정에서 불필요한 재빌드를 하지 않도록 정리하여 작게는 25%에서 비효율이 심했던 부분에서는 85%까지 CI 실행 시간을 감소 시켰습니다.
 
 <span class="page-break"></span>
 
 다른 오픈소스 프로젝트에 기여하는 것 외에도 개인 프로젝트도 오픈소스 라이선스로
 공개하고 있습니다.
 
- -  [agilestory.blog] ([GitHub 저장소]): “애자일 이야기” 블로그 글을 쉽게 찾아 읽을
+ -  [agilestory.blog] ([GitHub 저장소][github-agilestory-blog]): “애자일 이야기” 블로그 글을 쉽게 찾아 읽을
     수 있도록 도와주는 서비스입니다.
      -  저 이외에도 “애자일 이야기” 블로그의 글을 검색하여 찾아보려는 사람들이 있는
         것을 알게 되어 개발하였습니다.
- -  [bencodex-rs] ([GitHub 저장소]): [Libplanet]에서 사용하는 [Bencodex] 직렬화
+ -  [bencodex-rs] ([GitHub 저장소][github-bencodex-rs]): [Libplanet]에서 사용하는 [Bencodex] 직렬화
     포맷의 Rust 구현체입니다.
      -  사내 업무 과정 중 상태를 열어보는 것이 불편하여
         [Bencodex JSON 스펙][bencodex-json]에 따라 JSON 형식으로 변환하는
         기능을 마저 구현하고 CLI로 인터페이스를 만들어서 사내 업무에
         활용하였습니다.
- -  [gif2webp.com] ([GitHub 저장소]): 서버없이 브라우저에서 GIF를 WebP로 변경하는
+ -  [gif2webp.com] ([GitHub 저장소][github-gif2webp-com]): 서버없이 브라우저에서 GIF를 WebP로 변경하는
     간단한 웹 어플리케이션입니다. GIF를 WebP로 변환하기 위해 익숙하지 않은
     CLI를 사용하는 동료 디자이너의 불편함을 개선하기 위해 개발하였습니다.
- -  [9c.market] ([GitHub 저장소])
+ -  [9c.market] ([GitHub 저장소][github-9c-market])
      -  [Nine Chronicles]의 온체인 마켓의 상품들과 인앱 결제 상품들을 웹에서 볼 수 있게
         도와주는 서비스입니다.
      -  인앱 결제 대비 온체인 마켓의 상품이 얼마나 더 싼지를 가격 비교를 제공하여
         게이머가 더 합리적인 구매를 할 수 있도록 돕고자 하였습니다.
      -  또한 WNCG 토큰 가격을 활용하여 법정 화폐로는 얼마에 구매하는 꼴인지도 보여주어
         편의를 제공하고자 하였습니다.
+ -  [ap-thread-reader] ([GitHub 저장소][github-ap-thread-reader]): Mastodon을 비롯한 ActivityPub 구현체에서
+    글자 수 제한으로 인해 글을 나눠 썼을 때 이를 한 페이지에서 볼 수 있도록 도와주는 프로젝트입니다. ([관련 글][blog-ap-thread-reader])
 
 기타 다른 오픈소스 활동들은 제 [GitHub 프로필]을 참조해주세요.
 
@@ -230,6 +254,16 @@ GraphQL 사용법을 모르는 분들에게 불편한 방법이고 인벤토리 
 [gif2webp.com]: https://gif2webp.com
 [9c.market]: https://9c.market
 [GitHub 프로필]: https://github.com/moreal
+[github-9c-market]: https://github.com/moreal/9c.market
+[github-bencodex-rs]: https://github.com/moreal/bencodex-rs
+[github-clig-kr]: https://github.com/moreal/cli-guidelines-kr
+[github-agilestory-blog]: https://github.com/moreal/agilestory.blog
+[github-gif2webp-com]: https://github.com/moreal/gif2webp.com
+[ap-thread-reader]: https://ap-thread-reader.fly.dev/
+[github-ap-thread-reader]: https://github.com/moreal/ap-thread-reader
+[blog-ap-thread-reader]: https://blog.moreal.dev/2026/02/ap-thread-reader/
+[slidev-addon-subtitle]: https://github.com/moreal/slidev-addon-subtitle
+[fedify-pr-list]: https://github.com/fedify-dev/fedify/pulls?q=sort%3Aupdated-desc+is%3Apr+is%3Amerged+author%3Amoreal
 
 
 학력
@@ -265,9 +299,12 @@ GraphQL 사용법을 모르는 분들에게 불편한 방법이고 인벤토리 
      -  [How Go interface works]
      -  [deno-vite-plugin 디버깅 1편]
      -  [객체 프로퍼티 키 평가 과정]
+     -  [재현 가능한 커밋]
+     -  [테스트에 대한 주저리]
  -  비기술
      -  [Phanpy 번역 기여하기]
      -  [Hacktoberfest 2024 후기]
+     -  [2026년 2월 회고]
 
 [페타바이트 트래픽 원인 분석기]: https://blog.moreal.dev/2023/03/petabyte-traffic/
 [How Go interface works]: https://blog.moreal.dev/2020/02/go-interface/
@@ -275,5 +312,8 @@ GraphQL 사용법을 모르는 분들에게 불편한 방법이고 인벤토리 
 [객체 프로퍼티 키 평가 과정]: https://hackers.pub/@moreal/2025/javascript-to-property-key
 [Phanpy 번역 기여하기]: https://blog.moreal.dev/2024/09/phanpy-translation-guide/
 [Hacktoberfest 2024 후기]: https://snack.planetarium.dev/kor/2024/11/hacktoberfest/
+[재현 가능한 커밋]: https://blog.moreal.dev/2026/01/reproducible-commit/
+[2026년 2월 회고]: https://blog.moreal.dev/2026/03/retrospection-feburary/
+[테스트에 대한 주저리]: https://blog.moreal.dev/2026/02/testing/
 
 </body>
